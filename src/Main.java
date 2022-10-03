@@ -29,9 +29,9 @@ public class Main extends JFrame {
         MouseAdapter myMouseList = new MyListener();
         buttonStart.addMouseListener(myMouseList);
 
-        setSize(600, 300);
+        setSize(750, 300);
         setVisible(true);
-    } // end MainWindow
+    } // end MainWindow constructor
 
     protected void startGame(int numberOfHorse) {
         Hippodrome game = new Hippodrome(mainField, numberOfHorse);
@@ -40,7 +40,7 @@ public class Main extends JFrame {
         } catch (InterruptedException ex) {
             throw new RuntimeException(ex);
         }
-    }
+    } // end void startGame
 
     protected class MyListener extends MouseAdapter {
         public void mouseClicked(MouseEvent e) {

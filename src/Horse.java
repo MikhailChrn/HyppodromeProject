@@ -1,4 +1,4 @@
-import javax.swing.*;
+import javax.swing.JTextArea;
 
 public class Horse {
     private String name;
@@ -31,7 +31,7 @@ public class Horse {
 
     public double getDistance() {
         return distance;
-    }
+    } // end double Horse.getDistance
 
     public void setDistance(double distance) {
         this.distance = distance;
@@ -39,10 +39,10 @@ public class Horse {
 
     public void move() {
         distance += speed * Math.random();
-    }
+    } // end void Horse.move
 
     public void print() {
         for (int i = 0; i < (int)distance; i++) textArea.append(".");
         textArea.append(this.name + "\n");
-    }
+    } // end void Horse.print
 }
