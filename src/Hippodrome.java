@@ -10,7 +10,7 @@ public class Hippodrome {
     protected Hippodrome(JTextArea textOut, int numberOfHorses) {
         this.textOut = textOut;
         this.numberOfHorses = numberOfHorses;
-        // create horses HERE !!!
+        // create horses HERE !!!!!
         horses = new ArrayList<>();
         for (int i = 1; i <= numberOfHorses; i++)
             this.getHorses().add(new Horse("horse" + i, 3, 0, textOut));
